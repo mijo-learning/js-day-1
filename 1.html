@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Primer ejercicio</title>
+    <script>
+        function sumar() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = parseInt(num1) + parseInt(num2);
+            document.getElementById("results").innerHTML = result;
+        }
+        function restar(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = parseInt(num1) - parseInt(num2);
+            document.getElementById("results").innerHTML = result;
+        }
+        function dividir(){
+            alert("No esta implementado")
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div style="width: 250px; float: left;">
+        <label for="num1">Numero 1</label>
+        <br/>
+        <input type="number" name="num1" id="num1" required>
+        <br/><br/>
+        <label for="num2">Numero 2</label>
+        <br/>
+        <input type="number" name="num2" id="num2" required>
+        <br/><br/>
+        <div id="results"></div>
+    </div>
+    <div style="width: 100px; float: left;">
+        <button onclick="sumar()">Sumar</button>
+        <br/><br/>
+        <button onclick="restar()">Resta</button>
+        <br/><br/>
+        <button onclick="dividir()">Dividir</button>
+        <br/><br/>
+        <button onclick="multiplicar()">Multiplicat</button>
+    </div>
+</body>    
+</html>
